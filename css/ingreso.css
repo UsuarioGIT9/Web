@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    pad: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+.Contenedor {
+
+    width: 420px;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #bf51299a;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px (0,0,0, .2);
+    border-radius: 10px;
+    padding: 30px 40px;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../imagenes/bkgINGRESO.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: #ffffffaf;
+    border: none;
+    outline: none;
+    border: 2px solid #bf5129f6;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #363853;
+    padding: 20px 45px 20px 20px;
+    font-weight: 700;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #bf51299a;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #363853;
+    width: 100%;
+    font-weight: 600; 
+}
+
+.btn a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: #BF5129;
+}
+
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #363853;
+}
+
+.Contenedor h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.Contenedor .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    color: #363853;
+
+}
+
+.input-box input::placeholder {
+    color: #363853;
+    font-size: 1rem;
+}
+
+.Contenedor .remember-forgot {
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+
+
+}
+
+.remember-forgot label input {
+    margin-right: 5px;
+    accent-color: #fff;
+    border-style: none;
+}
+
+.remember-forgot a {
+
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+    
+}
+
+.Contenedor .register-link {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+    color: #BF5129;
+}
