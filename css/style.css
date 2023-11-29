@@ -406,3 +406,103 @@ footer .column > a:hover{
         display: none;
     }
 }
+
+
+
+
+.a-proxy a {
+    text-decoration: none;
+    
+}
+
+.body-proxy {
+    color: #fff;
+    background-image: url("../imagenes/Background-logo1.png");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    justify-content: center
+}
+
+.proxy-container {
+    display: flex;
+    justify-content: center;
+}
+
+.proxyglass-container {
+    display: block;
+    max-width: 72vw;
+    margin-top: 10vh;
+    margin-bottom: 30px;
+    background: rgba(0,0,0,0.56);
+    padding: 50px;
+    border-radius: 16px;
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
+}
+
+.proxy-logo {
+    max-width: 150px;
+    display: flex;
+    margin: auto;
+}
+
+
+ul.proxynav-links a {
+    margin: 20px;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+ul.proxynav-links {
+    margin: 5px;
+    float: right;
+    display: flex;
+    list-style: none;
+}
+
+.contenido {
+    display: flex;
+    width: 100%;
+}
+
+.main h2 span{
+    font-size: 2rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #BF5129;
+}
+
+.main p {
+    font-weight: 100;
+    padding: 1px;
+    margin: 5,5,5,5;
+    
+}
+
+.proxy-btn {
+    display: flex;
+    padding: 1rem 2rem;
+    margin:auto;
+    margin-top: 1rem;
+    font-size: 1rem;
+    width: 50%;
+    color: #fff;
+    background-color: #bf51299a;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.proxy-btn a {
+    color: #fff;
+    font-size: 700;
+    margin: auto;
+}
+
+.image-container img {
+    max-width: 500px;
+}
+
+
