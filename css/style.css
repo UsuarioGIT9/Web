@@ -2,6 +2,389 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background-color: #252525;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .nav-logo {
+        max-width: 100px;
+    
+        img {
+            width: 100%;
+            display: flex;
+        }
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+
+        a {
+            text-decoration: none;
+            position: relative;
+            padding-bottom: 0.75rem;
+            color: #fff;
+        }
+    }
+
+    .nav-btn {
+        padding: 0.75rem 1.5rem;
+        display: flex;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 200px;
+        background-color: orange;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+}
+
+/*Efecto para el nav*/
+
+.link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #bf5129;
+    transition: all 0.3s ease;
+}
+
+
+.link a:hover::after {
+    width: 70%;
+}
+
+.nav-btn:hover {
+    background-color: #bf5129;
+}
+
+/*DROPDOWN MENU*/
+
+
+
+/*header*/
+
+
+header {
+    position: relative;
+    max-width: 1200px;
+    padding-top: 2rem;
+    margin: auto;
+
+    .header-container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 5rem 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 2rem;
+    
+        .blur{
+            position: absolute;
+            box-shadow: 0 0 1000px 50px #bf5129;
+            z-index: -100;
+        }
+
+        h4 {
+            margin-bottom: 1rem;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 600px;
+        }
+
+        h1 {
+            color: #fff;
+            margin-bottom: 1rem;
+            font-size: 3rem;
+            font-weight: 700px;
+            line-height: 4rem
+
+        }
+
+        span {
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 1px #fff;
+        }
+
+        .header-btn{
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            font-weight: 200px;
+            background-color: orange;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 1rem;
+
+            a {
+                text-decoration: none;
+                position: relative;
+                padding: 0.5rem;
+                color: #fff;
+                font-size: 1rem;
+            }
+        }  
+
+        .header-imagen {
+            position: relative;
+
+        }
+
+        .header-imagen::before {
+            content: "o";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 38rem;
+            font-weight: 400px;
+            line-height: 20rem;
+            color: #bf5129;
+            opacity: 0.2;
+            z-index: -200;
+        }
+
+        
+        img {
+
+            width: 100%;
+            display: inline;
+        }
+
+        .header-btn:hover {
+            background-color: #bf5129;
+        }
+
+        p {
+            margin-bottom: 2rem;
+            color: #fff;
+        }
+
+    }
+
+
+    
+}
+
+.container {
+
+    .container-header {
+        margin-bottom: 1rem;
+        color: #fff;
+        text-align: center;
+        font-size: 2.25rem;
+        font-weight: 600;
+    }
+
+
+
+    .container-features {
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+
+        .container-card {
+            background-color: #666666;
+            margin: 30px;
+            padding: 1rem;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+
+            span{
+                display: inline-block;
+                background-color: orange;
+                padding: 2px 9px;
+                margin-bottom: 1rem;
+                font-size: 1.75rem;
+                color: #fff;
+                border-radius: 5px;
+            }
+
+            h4 {
+                margin-bottom: 0.5rem;
+                color: #fff;
+                font-size: 1.2rem;
+                font-weight: 600;
+
+            }
+
+            p {
+                color: #ccc;
+                margin-bottom: 1rem;
+            }
+
+            a {
+                color: #fff;
+                transition: all 0.3s ease;
+
+                :hover {
+                    color: #252525;
+                }
+            }
+
+
+
+        }
+
+        .container-card:hover {
+            background-color: #bf5129;
+            border-color: #fff;
+
+        }
+
+
+    }
+
+
+}
+
+
+.container {
+
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+
+    .header {
+
+        margin: 2rem 1rem;
+        color: #fff;
+        text-align: center;
+        font-size: 2.25rem;
+        font-weight: 600;
+
+    }
+
+    .sub-header {
+        max-width: 600px;
+        margin: auto;
+        text-align: center;
+        color: #ccc;
+    }
+
+
+    .pricing {
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+
+        .container-card {
+            margin: 30px;
+            padding: 3rem 2rem;
+            background-color: #27272a;
+            display: flex;
+            flex-direction: column;
+            border: 2px solid transparent;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+
+            
+        }
+
+        :hover {
+            background-color: #323232;
+            border-color: #ccc;
+            color: #fff;
+        }
+
+        .content{
+            flex: 1;
+            margin-bottom: 2rem;
+
+        }
+
+        h4 {
+            margin-bottom: 1rem;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        h3 {
+            color:#fff ;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            font-weight: 600;
+            border-bottom: 2px dashed #fff;
+
+        }
+
+        p {
+            color: #fff;
+            margin-bottom: 0.75rem;
+
+            i {
+                color: #ccc;
+                font-size: 1.2rem;
+                margin-right: 0.3rem;
+
+            }
+        }
+    
+    }
+
+
+
+
+
+
+}
+
+#pricing-btn {
+    padding: 0.75rem 1.5rem;
+    display: flex;
+    font-weight: 300px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+    color: #fff;
+
+}
+
+#pricing-btn:hover {
+    background-color: #bf5129;
+    border-color: #ccc;
+}
+
+
+
+/*  ESTILOS DEL INDEX SIN SAAS
+
+
 *{
     padding: 0;
     margin: 0;
@@ -170,6 +553,7 @@ header .image img{
     margin: auto;
 }
 
+
 section .header{
     margin-bottom: 1rem;
     color: #363853;
@@ -302,17 +686,40 @@ section .header{
     border-color: #BF5129;
 }
 
-footer{
-    position: relative;
+
+position: relative;
+    padding-top: 2rem;
+    display: grid;
+    align-items: center;
+*/
+
+
+footer .container {
+    max-width: 200px;
+    margin: auto;
+    padding: 5rem 2rem;
     display: grid;
     grid-template-columns: 400px repeat(3, 1fr);
     gap: 2rem;
+}
+
+footer .column {
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    align-items: center;
+    
 }
 
 footer .column .logo{
     max-width: 100px;
     margin-bottom: 2rem;
     margin-left: 2.5rem;
+}
+
+footer .column .logo img {
+    width: 100%;
+    display: flex;
 }
 
 footer .column p{
@@ -362,7 +769,7 @@ footer .column > a:hover{
 
 
 
-@media (width < 900px){
+@media (width < 992px){
     .nav-links{
         display:none;
     }
@@ -410,19 +817,6 @@ footer .column > a:hover{
 
 
 
-.a-proxy a {
-    text-decoration: none;
-    
-}
-
-.body-proxy {
-    color: #fff;
-    background-image: url("../imagenes/Background-logo1.png");
-    min-height: 100vh;
-    background-size: cover;
-    background-position: center;
-    justify-content: center
-}
 
 .proxy-container {
     display: flex;
